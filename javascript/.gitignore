@@ -3,8 +3,8 @@ node_modules
 *.gypi
 !/final-flags.gypi
 
-/dist
 /build/*
 /sources/yoga
 
 npm-debug.log*
+package-lock.json

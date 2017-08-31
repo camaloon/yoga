@@ -38,6 +38,11 @@ module.exports = {
 
         new (require("webpack").BannerPlugin)(require("fs").readFileSync(__dirname + "/../LICENSE", "utf8"))
 
-    ]
+    ],
 
+    module: {
+      rules: [
+        { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+      ]
+    }
 };
